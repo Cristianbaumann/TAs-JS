@@ -11,13 +11,13 @@ function sumAll(){
 function convertToCelsius(){
     const temp = parseInt(document.getElementById("temperatura").value);
     const tocelcius =(((temp - 32)*5)/9).toFixed(1);
-    document.getElementById("Conversion").innerText= `${temp}°f son ${tocelcius} celsius`;
+    document.getElementById("ConversionC").innerText= `${temp}°f son ${tocelcius} celsius`;
 }
 
 function convertToFahrenheit(){
-    const temp = parseInt(document.getElementById("temperatura").value);
+    const temp = parseInt(document.getElementById("temperaturaF").value);
     const toFahrenheit = ((temp * 9) / 5 + 32).toFixed(1);
-    document.getElementById("Conversion").innerText= `${temp}°f son ${toFahrenheit} celsius`;
+    document.getElementById("ConversionF").innerText= `${temp}°c son ${toFahrenheit} Fahrenheit`;
 }
 
 function leapYear(){

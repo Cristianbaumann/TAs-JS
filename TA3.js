@@ -13,12 +13,7 @@ function generatePassword(){
     document.getElementById("PasswordGenerada").innerText = `Contraseña generada: ${pass}`;
 }
 
-const people = [
-    { name: "Jorge", yearOfBirth: 1956},
-    { name: "Juan", yearOfBirth: 1920 },
-    { name: "Analia", yearOfBirth: 1948 },
-    { name: "Ana", yearOfBirth: 1945 },
-  ];
+
   
 function findTheOldest() {
     const currentYear = new Date().getFullYear();
@@ -33,7 +28,16 @@ function findTheOldest() {
       }
     }
     document.getElementById("OldestPerson").innerText = `La persona más vieja es ${oldestPerson.name}, con ${maxAge} años.`;
-  }
+}
+
+const people = [
+    { name: "Jorge", yearOfBirth: 1956},
+    { name: "Juan", yearOfBirth: 1920 },
+    { name: "Analia", yearOfBirth: 1948 },
+    { name: "Ana", yearOfBirth: 1945 },
+  ];
+
+
 
 
 

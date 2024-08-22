@@ -29,9 +29,7 @@ function leapYear(){
 function getSum(array){
     let sum = 0;
     for(let i =0; i< array.length; i++){
-        sum += arr[i];
+        sum += array[i];
     }
-    return sum;
+    document.getElementById("sumaAll").innerText = `La suma es: ${sum}`;    
 }
-arr = [1,2,3]
-console.log(getSum(arr));

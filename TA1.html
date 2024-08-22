@@ -12,14 +12,25 @@
 
   <label for="repeticiones">Repeticiones:</label>
   <input type="number" id="repeticiones">
-
   <button onclick="generarTexto()">Generar</button>
+  <br>
+  
+  <label for="textoAlreves">Texto dado vuelta</label>
+  <input type="text" id="textoAlreves">
+  <button onclick="generarTexto()">Dar vuelta</button>
   <div id="contenedorDeP"></div>
+  <br>
+
+  <input type="text" id="Sacaritem" placeholder="Item a eliminar">
+  <button onclick="removeFromArray()">Eliminar item</button>
+  <div id="NuevoArreglo"></div>
+  <br>
 
   <button onclick="mostrarTitulos()">Mostrar Títulos</button>
   <div id="ContendeorDeH1"></div>
-
-  <button onclick="getOdds([1,2,3,4,5,6,7,8,9])">Obtener Impares</button>
+  <br>
+  <br>
+  <button onclick="getOdds([1,2,3,4,5,6,7,8,9,10])">Obtener Impares</button>
   <div id="ContenedorDeOdds" style="color: violet; font-size: 16px;"></div>
 
   <button onclick="duplicates([1, 2, 3, 4, 5, 2, 3, 3, 7, 8, 9, 9])">Mostrar Duplicados</button>

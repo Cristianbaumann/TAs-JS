@@ -1,6 +1,6 @@
 function generatePassword(){
-    const long = parseInt(document.getElementById("longitud").value);
-    if(long < 8){
+    const long = parseInt(document.getElementById("longitud").value);   
+    if(long <= 8 || isNaN(long)){
         alert("La contraseña es muy corta");
         return;
     }

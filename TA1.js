@@ -6,9 +6,10 @@ function repeatString(texto, repeticiones) {
       contenedor.appendChild(parrafo);
     }
   }
+
 function reversetring(texto){
-    const contenedor = document.getElementById("contenedorDeP")
-    let newString = ""
+    const contenedor = document.getElementById("contenedorDeP");
+    let newString = "";
     for (let i = texto.length - 1; i >= 0; i--) {
         newString += texto[i];
     }
@@ -18,14 +19,16 @@ function reversetring(texto){
 
 }
 
-function removeFromArray(arreglo, item) {
-    const index = arreglo.indexOf(item)
-    if(index !== -1){
-        arreglo.splice(index,1)
-    }
-    console.log(arreglo);
+const arreglo = ["item1","item2","item3","item4","item5"]
+function removeFromArray() {
+  const item = document.getElementById("Sacaritem").value;
+  const index = arreglo.indexOf(item)
+  if(index !== -1){
+    arreglo.splice(index,1)
+  }
+  document.getElementById("NuevoArreglo").innerText= `El nuevo arreglo es: ${arreglo.join(",")}`;
 }
-console.log(removeFromArray([1,2,3,4,5,6,7,8,9],2));
+
 
 
 function getTheTitles(libros) {
@@ -43,7 +46,7 @@ function mostrarTitulos() {
     { title: "Harry Potter", autor: "J.K. Rowling" },
     { title: "Game of Thrones", autor: "George R.R. Martin" },
     { title: "Fire and Blood", autor: "George R.R. Martin" }
-  ];
+  ];  
 
   getTheTitles(libros);
 }
@@ -88,8 +91,9 @@ function duplicates(nums) {
 }
 function generarTexto() {
     const texto = document.getElementById("texto").value;
+    const Rtexto = document.getElementById("textoAlreves").value;
     const repeticiones = parseInt(document.getElementById("repeticiones").value);
     repeatString(texto, repeticiones);
-    reversetring(texto);
+    reversetring(Rtexto);
   }
   
